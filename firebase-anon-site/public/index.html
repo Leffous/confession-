@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Anon Stories (Firebase)</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Anon Stories</h1>
+      <p class="tag">Anonymous public stories — posts are live for everyone.</p>
+    </header>
+
+    <section class="composer card">
+      <textarea id="story" placeholder="Write your story..."></textarea>
+      <div class="controls">
+        <button id="postBtn">Post Story</button>
+        <small id="status"></small>
+      </div>
+    </section>
+
+    <section id="list" class="list card">
+      <h2>Latest stories</h2>
+      <div id="stories"></div>
+    </section>
+
+    <footer class="meta card">
+      <p>Posts are anonymous and uncensored (we escape HTML tags for safety). Use responsibly.</p>
+    </footer>
+  </main>
+
+  <!-- Firebase (compat) SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
